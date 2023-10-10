@@ -56,7 +56,7 @@ public class ItemSeasonClock extends Item
         {
             float frame = apply(stack, (World) worldClient, (EntityLivingBase) entityClientPlayerMP);
             int index = (int) Math.round(frame * 64);
-            if (index >= 64)
+            if (index > 64)
                 index = 0;
             return this.icons[index];
         }
